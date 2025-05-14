@@ -1,1 +1,24 @@
-<p>manage-alumnes works!</p>
+<h2>Listado de Alumnos</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Apellido</th>
+      <th>Email</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let alumne of alumnes">
+      <td>{{ alumne.id }}</td>
+      <td>{{ alumne.nom }}</td>
+      <td>{{ alumne.cognom }}</td>
+      <td>{{ alumne.email }}</td>
+      <td>
+        <button class="btn btn-danger btn-sm" (click)="delete(alumne.id)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

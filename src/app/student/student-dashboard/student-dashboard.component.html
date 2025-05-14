@@ -1,5 +1,12 @@
 <div class="dashboard-header">
-    <h1>Bienvenido, Alumno! 👋</h1>
-    <button (click)="logout()" class="logout-button">Cerrar sesión</button>
-  </div>
-  
+  <h1>Bienvenido, Alumno! 🎓</h1>
+  <button (click)="logout()" class="logout-button">Cerrar sesión</button>
+</div>
+
+<div class="dashboard-actions">
+  <button routerLink="/student/ufs" class="btn btn-primary">
+    Mis UFs
+  </button>
+</div>
+
+<router-outlet></router-outlet>

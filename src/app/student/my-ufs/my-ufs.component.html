@@ -1,1 +1,18 @@
-<p>my-ufs works!</p>
+<h2>Mis Unidades Formativas (UFs)</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nombre</th>
+      <th>Módulo ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let uf of ufs">
+      <td>{{ uf.id }}</td>
+      <td>{{ uf.nom }}</td>
+      <td>{{ uf.modul_id }}</td>
+    </tr>
+  </tbody>
+</table>

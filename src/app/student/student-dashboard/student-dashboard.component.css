@@ -1,24 +1,49 @@
+/* Encabezado del dashboard */
 .dashboard-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    background-color: #e3f2fd;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .logout-button {
-    padding: 8px 16px;
-    background-color: #1976d2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  .logout-button:hover {
-    background-color: #1565c0;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #e3f2fd;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Botón de cerrar sesión */
+.logout-button {
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #1565c0;
+}
+
+/* Contenedor para botones de acción del dashboard */
+.dashboard-actions {
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Botón de "Gestionar Alumnes" */
+.dashboard-actions .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dashboard-actions .btn:hover {
+  background-color: #43a047;
+}
